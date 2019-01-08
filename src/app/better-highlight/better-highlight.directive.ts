@@ -1,5 +1,4 @@
 import { Directive, ElementRef, Renderer2 } from '@angular/core';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Directive({
   selector: '[appBetterHighlight]'
