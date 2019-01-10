@@ -14,12 +14,12 @@ export class BetterHighlightDirective {
   @Input() defaultColor: string = 'transparent';
   @Input() highlightColor: string = 'blue';
 
-  @HostBinding('style.backgroundColor') backgroundColor: string = this.defaultColor;
+  @HostBinding('style.backgroundColor') backgroundColor: string ;
 
   constructor(private elRef: ElementRef, private renderer: Renderer2) { }
 
   ngOnInit(){
-   
+   this.backgroundColor = this.defaultColor;
   }
 
   @HostListener('mouseenter') mouseover(eventData: Event) {
