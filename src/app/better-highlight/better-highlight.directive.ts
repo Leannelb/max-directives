@@ -12,7 +12,8 @@ import {
 })
 export class BetterHighlightDirective {
   @Input() defaultColor: string = 'transparent';
-  @Input() highlightColor: string = 'blue';
+  @Input('appBetterHighlight') highlightColor: string = 'blue';
+  // if you set the provide an alias for the input, the same as the selector 
 
   @HostBinding('style.backgroundColor') backgroundColor: string ;
 
